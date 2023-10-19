@@ -1,3 +1,6 @@
+Little Addon for the vl53l1x Plugin 113 with a new variable called "RangeStatus" which is included in the Adafruit library.
+Now it is possible to see if an object is in front of the sensor (Rangestatus < 1). Until now the sensor distance value was mad when no object was in front of the sensor.
+
 |Latest Nightly  | Build Status | Downloads | Docs | Patreon | Ko-Fi | PayPal |
 |-------|-------|-------|-------|-------|-------|-------|
 | [![GitHub version](https://img.shields.io/github/release/letscontrolit/ESPEasy/all.svg)](https://github.com/letscontrolit/ESPEasy/releases/latest) | ![Build status](https://github.com/letscontrolit/ESPEasy/actions/workflows/build.yml/badge.svg) | [![Downloads](https://img.shields.io/github/downloads/letscontrolit/ESPEasy/total.svg)](https://github.com/letscontrolit/ESPEasy/releases) | [![Documentation Status](https://readthedocs.org/projects/espeasy/badge/?version=latest)](https://espeasy.readthedocs.io/en/latest/?badge=latest) | [![donate](https://img.shields.io/badge/donate-Patreon-blue.svg)](https://www.patreon.com/GrovkillenTDer) | [![donate](https://img.shields.io/badge/donate-KoFi-blue.svg)](https://ko-fi.com/grovkillentder) | [![donate](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://www.paypal.me/espeasy) |
