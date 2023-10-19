@@ -23,6 +23,8 @@
 # define PLUGIN_NAME_113       "Distance - VL53L1X (400cm)"
 # define PLUGIN_VALUENAME1_113 "Distance"
 # define PLUGIN_VALUENAME2_113 "Ambient"
+# define PLUGIN_VALUENAME3_113 "RangeStatus"
+
 
 
 boolean Plugin_113(uint8_t function, struct EventStruct *event, String& string)
@@ -58,6 +60,7 @@ boolean Plugin_113(uint8_t function, struct EventStruct *event, String& string)
     {
       strcpy_P(ExtraTaskSettings.TaskDeviceValueNames[0], PSTR(PLUGIN_VALUENAME1_113));
       strcpy_P(ExtraTaskSettings.TaskDeviceValueNames[1], PSTR(PLUGIN_VALUENAME2_113));
+      strcpy_P(ExtraTaskSettings.TaskDeviceValueNames[2], PSTR(PLUGIN_VALUENAME3_113));
       break;
     }
 
