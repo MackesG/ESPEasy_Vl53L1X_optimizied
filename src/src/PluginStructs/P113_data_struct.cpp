@@ -114,6 +114,16 @@ uint16_t P113_data_struct::readAmbient() {
   return sensor->getAmbientRate();
 }
 
+
+uint16_t P113_data_struct::readRangestatus() {
+  if (nullptr == sensor) {
+    return 0u;
+  }
+  return sensor->getRangeStatus();
+}
+
+
+
 bool P113_data_struct::isReadSuccessful() {
   return success;
 }
