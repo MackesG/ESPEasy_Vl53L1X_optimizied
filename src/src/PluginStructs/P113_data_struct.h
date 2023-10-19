@@ -31,6 +31,7 @@ public:
   bool     startRead();
   bool     readAvailable();
   uint16_t readDistance();
+  uint16_t readRangestatus();
   uint16_t readAmbient();
   bool     isReadSuccessful();
 
