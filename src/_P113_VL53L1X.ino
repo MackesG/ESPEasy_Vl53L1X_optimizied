@@ -42,7 +42,7 @@ boolean Plugin_113(uint8_t function, struct EventStruct *event, String& string)
       Device[deviceCount].PullUpOption       = false;
       Device[deviceCount].InverseLogicOption = false;
       Device[deviceCount].FormulaOption      = true;
-      Device[deviceCount].ValueCount         = 2;
+      Device[deviceCount].ValueCount         = 3;
       Device[deviceCount].SendDataOption     = true;
       Device[deviceCount].TimerOption        = true;
       Device[deviceCount].GlobalSyncOption   = true;
