@@ -152,11 +152,13 @@ boolean Plugin_113(uint8_t function, struct EventStruct *event, String& string)
       if (nullptr != P113_data) {
         uint16_t dist      = P113_data->readDistance();
         uint16_t ambient   = P113_data->readAmbient();
+        uint16_t ambient   = P113_data->readRangestatus();
         bool     triggered = (dist > UserVar[event->BaseVarIndex] + PCONFIG(4)) || (dist < UserVar[event->BaseVarIndex] - PCONFIG(4));
 
         if (P113_data->isReadSuccessful() && (triggered || (PCONFIG(3) == 1)) && (dist != 0xFFFF)) {
           UserVar[event->BaseVarIndex + 0] = dist;
           UserVar[event->BaseVarIndex + 1] = ambient;
+          UserVar[event->BaseVarIndex + 2] = rangestatus;
           success                          = true;
         }
       }
