@@ -39,7 +39,7 @@ bool P113_data_struct::begin() {
 
     if (range) {
       sensor->setDistanceModeLong();
-      sensor->setROI(4,4,199);
+      sensor->setROI(16,6,199);
     } else {
       sensor->setDistanceModeShort();
     }
